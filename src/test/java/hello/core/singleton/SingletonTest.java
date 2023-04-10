@@ -23,4 +23,5 @@ public class SingletonTest {
         //memberService1 != memberService2
         assertThat(memberService1).isNotEqualTo(memberService2);
     }
+
 }
