@@ -14,10 +14,10 @@ import org.springframework.context.annotation.FilterType;
         excludeFilters = @ComponentScan.Filter(type = FilterType.ANNOTATION, classes = Configuration.class)
 )
 public class AutoAppConfig {
-    //임의로 수동 빈 등록(memoryMemberRepository 는 컴포넌트 스캔에의해 빈 등록이 된 상태)
-    @Bean(name = "memoryMemberRepository")
-    MemberRepository memberRepository(){
-        return new MemoryMemberRepository();
-    }
+//    //임의로 수동 빈 등록(memoryMemberRepository 는 컴포넌트 스캔에의해 빈 등록이 된 상태)
+//    @Bean(name = "memoryMemberRepository")
+//    MemberRepository memberRepository(){
+//        return new MemoryMemberRepository();
+//    }
 
 }
